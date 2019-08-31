@@ -96,7 +96,7 @@ body {
 }
 .profile .kotakSatu, .profile .kotakDua {
     width: 500px;
-    height: 200px;
+    min-height: 200px;
     margin: auto;
 }
 .profile tr td {
@@ -105,7 +105,7 @@ body {
 #profile h1{
     text-align: center;
 }
-#profile hr, #portfolio hr, #contact hr {
+hr {
     width: 20%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -125,14 +125,17 @@ table {
     width: 100%;
     border-color: 3px solid black;
 }
+#skill .container {
+    padding: 100px 10px;
+}
+#skill .skill .progress {
+    border-radius: 50px;
+}
+#skill .skill .progress-bar {
+    border-radius: 50px;
+}
 #portfolio .container {
-    padding-top: 100px;
-}
-#portfolio .skill .progress {
-    border-radius: 50px;
-}
-#portfolio .skill .progress-bar {
-    border-radius: 50px;
+    padding: 0 10px 100px 0;
 }
 #contact h1 {
     margin: auto;
@@ -205,6 +208,10 @@ table {
     margin: 20px;
 }
 @media screen and (max-width:680px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
     .header li:not(:first-child){
         display: none;
     }
@@ -219,17 +226,20 @@ table {
     }
     #home .kolom {
         display: block;
+        padding: 20px 0;
         margin: auto;
-        padding: 20px;
     }
     #home .kolom1 {
-        margin-left: -80px;
+        margin-left: -120px;
     }
     #home .kolom1, #home .kolom2 {
         width: 100%;
     }
     #home .kolom2 {
         margin-top: -100px;
+    }
+    #contact {
+        width: 80%
     }
     .header ul.responsive {
         position: relative;
@@ -245,6 +255,11 @@ table {
     .profile .kotakSatu {
         margin-bottom: 15%;
     }
-	#contact {
-		width: 80%;
+    h1 {
+        font-size: 2rem;
+    }
+    #contact .form {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
