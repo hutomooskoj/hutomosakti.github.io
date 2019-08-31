@@ -1,0 +1,248 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+}
+body {
+    background-color: #dcdcdc;
+}
+.header {
+    position: fixed;
+    width: 100%;
+}
+.header ul {
+    list-style-type: none;
+    padding: .5% 8% .2% 8%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5)
+}
+.header li {
+    float: left;
+}
+.header li a {
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.header li a:hover {
+    background-color: #aaa;
+}
+.header li.icon {
+    display: none;
+}
+#home{
+    min-height: 500px;
+}
+#home {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: auto;
+    background-color: black;
+}
+#home .kolom {
+    width: 80%;
+    box-sizing: content-box;
+    display: flex;
+}
+#home .kolom1, #home .kolom2 {
+    width: 40%;
+    margin: 100px auto;
+}
+#home .kolom1 img {
+    padding-left: 100px;
+}
+#home .kolom2 p {
+    font-size: 2em;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+#home .kolom2 a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px;
+}
+#home .kolom2 a:hover {
+    background-color: royalblue;
+}
+.menu a img {
+    border: 3px solid white;
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 5px;
+    padding: 5px;
+}
+#profile {
+    width: 80%;
+    text-align: center;
+    background-color: #d3d3d3;
+    margin: auto;
+    border-color: 1px solid black;
+    text-align: justify;
+    padding: 65px 30px 30px 30px;
+    margin-top: -6%;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.profile .kotakSatu, .profile .kotakDua {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+.profile tr td {
+    padding: 5px;
+}
+#profile h1{
+    text-align: center;
+}
+#profile hr, #portfolio hr, #contact hr {
+    width: 20%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-color: black;
+    border-radius: 60px;
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.profile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+table {
+    width: 100%;
+    border-color: 3px solid black;
+}
+#portfolio .container {
+    padding-top: 100px;
+}
+#portfolio .skill .progress {
+    border-radius: 50px;
+}
+#portfolio .skill .progress-bar {
+    border-radius: 50px;
+}
+#contact h1 {
+    margin: auto;
+}
+#contact {
+    width: 55%;
+	margin: 30px auto;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	min-width:0;
+	word-wrap:break-word;
+	background-color: #a9a9a9;
+	background-clip:border-box;
+	border-radius:.35rem;
+    padding: 50px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.form label {
+    margin: 5px 10px 5px 0;
+}
+
+.form input, textarea {
+
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.form button:hover {
+    background-color: royalblue;
+}
+#footer {
+    text-align: center;
+    background-color: black;
+    min-height: 13%;
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+#footer p {
+    text-align: center;
+    margin: 14px;
+}
+#footer .medSos {
+    margin-bottom: 5px;
+}
+#footer .medSos p {
+    display: inline;
+    margin: 0 3px;
+}
+#footer .medSos i {
+    text-decoration: none;
+    color: white;
+}
+#footer .text {
+    margin: auto;
+    margin: 20px;
+}
+@media screen and (max-width:680px) {
+    .header li:not(:first-child){
+        display: none;
+    }
+    .header li.icon {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .header h1 {
+        display: none;
+    }
+    #home .kolom {
+        display: block;
+        margin: auto;
+        padding: 20px;
+    }
+    #home .kolom1 {
+        margin-left: -80px;
+    }
+    #home .kolom1, #home .kolom2 {
+        width: 100%;
+    }
+    #home .kolom2 {
+        margin-top: -100px;
+    }
+    .header ul.responsive {
+        position: relative;
+    }
+    .header.responsive ul li {
+        float: none;
+        display: inline;
+    }
+    .header.responsive ul li a {
+        display: block;
+        text-align: left;
+    }
+    .profile .kotakSatu {
+        margin-bottom: 15%;
+    }
+}

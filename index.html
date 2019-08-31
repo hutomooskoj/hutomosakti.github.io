@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/b852b50a57.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>My Protofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profil</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="responsive()">☰</a>
+            </li><br>
+        </ul>
+    </div>
+    <div id="home">
+        <div class="kolom">
+            <div class="kolom1">
+                <img src="gambar/hutomo.png" alt="" srcset="">
+            </div>
+            <div class="kolom2">
+                <p>Hallo, Saya hutomo. Seorang Web Designer dan Front End Developer.</p>
+                <a href="#profile">lanjut</a>
+            </div>
+        </div>
+    </div>
+    <div id="profile">
+        <h1>Tentang Saya</h1>
+        <hr>
+        <div class="profile">
+            <div class="kotakSatu">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Hutomo Sakti Kartiko</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>Pontianak Selatan, kota pontianak, kalimantan barat</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>Mahasiswa</td>
+                    </tr>
+                    <tr>
+                        <td>Semester</td>
+                        <td>Tiga</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>Rekayasa Sistem Komputer, Universitas Tanjungpura.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="kotakDua">
+                Saat pertama kali saya mengenal programming yaitu satu tahun yang lalu, dan pada saat itu pula saya mulai menyukai programming. Setelah mendalami selama hampir satu tahun saya merasa, sesuatu yang telah lama saya impikan bisa di wujudkan melalui dunia programming.
+            </div>
+        </div>
+    </div>
+    <div class="protfolio" id="portfolio">
+        <div class="container">
+            <h1 class="text-center">My Portfolio</h1>
+            <hr>
+            <div class="skill">
+                <div class="progress" style="height: 45px">
+                    <div class="progress-bar text-left p-4 progress-bar-striped progress-bar-animated" style="width: 80%">
+                        <h6>HTML 80%</h6>
+                    </div>
+                </div> <br>
+                <div class="progress" style="height: 45px">
+                    <div class="progress-bar text-left p-4 progress-bar-striped progress-bar-animated" style="width: 80%">
+                        <h6>CSS 80%</h6>
+                    </div>
+                </div><br>
+                <div class="progress" style="height: 45px">
+                    <div class="progress-bar text-left p-4 progress-bar-striped progress-bar-animated" style="width: 50%">
+                        <h6>BOOTSTRAP 50%</h6>
+                    </div>
+                </div><br>
+                <div class="progress" style="height: 45px">
+                    <div class="progress-bar text-left p-4 progress-bar-striped progress-bar-animated" style="width: 5%">
+                        <h6>JQEURY 5%</h6>
+                    </div>
+                </div><br>
+                <div class="progress" style="height: 45px">
+                    <div class="progress-bar text-left p-4 progress-bar-striped progress-bar-animated" style="width: 30%">
+                        <h6>JAVASCRIPT 30%</h6>
+                    </div>
+                </div><br>
+                <div class="progress" style="height: 45px">
+                    <div class="progress-bar text-left p-4 progress-bar-striped progress-bar-animated" style="width: 50%">
+                        <h6>JAVA 50%</h6>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1>Kontak saya</h1>
+        <hr>
+        <div class="kotak">
+			<form class="form">
+                <label for="nama">Nama</label><br>
+                <input type="text" id="nama" placeholder="Masukkan nama" name="nama">
+			</form>
+			<form class="form">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Masukkan email" name="email">
+			</form>
+			<form class="form">
+                <label for="pesan">Pesan</label><br>
+                <textarea rows="5" placeholder="Masukkan pesan"></textarea>
+			</form> 
+			<form class="form">
+			    <button type="submit">Kirim</button>
+			</form>
+		</div>
+    </div>
+    <div id="footer" class="footer">
+        <div class="text">
+            <div class="medSos">
+                <p><a href="http://instagram.com/hutomooskoj"><i class="fab fa-instagram"></i></a></p>
+                <p><a href="https://www.facebook.com/hutomo.sakti.7"><i class="fab fa-facebook-f"></i></a></p>
+                <p><a href="https://api.whatsapp.com/send?phone=6289602611066"><i class="fab fa-whatsapp"></i></a></p>
+                <p><a href="https://t.me/hutomosakti"><i class="fab fa-telegram-plane"></i></a></p>
+            </div>
+            <p>&copy; 2019 | dibuat oleh Hutomo</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
